@@ -1,0 +1,48 @@
+.discount {
+  color: $bg-white;
+  background-color: $bg-black;
+}
+
+.discount__title,
+.discount__value {
+  font-family: "Kudryashev", "Arial", sans-serif;
+}
+
+.discount__title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.discount__value {
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.discount__question,
+.discount__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.discount__form ::placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  color: $bg-grey;
+}
+
+.discount__form label {
+  font-size: 16px;
+  line-height: 22px;
+  color: $bg-grey;
+}
+
+.discount__form-button {
+  font-size: 22px;
+  line-height: 22px;
+  color: $bg-white;
+  background-color: $bg-black;
+  border: 1px solid $bg-white;
+}

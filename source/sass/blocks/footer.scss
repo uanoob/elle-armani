@@ -1,0 +1,35 @@
+.footer {
+  border: 1px solid orangered;
+  background-color: $bg-white;
+}
+
+.footer__share {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__social-list {
+  border: 1px solid orangered;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__sosial-item {
+  border: 1px solid orangered;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.footer__sosial-item a {
+  color: $bg-black;
+  text-decoration: none;
+}
+
+.footer__info {
+  border: 1px solid orangered;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}

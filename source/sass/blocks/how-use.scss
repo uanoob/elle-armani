@@ -1,0 +1,25 @@
+.how-use {
+  color: $bg-white;
+  background-color: $bg-black;
+}
+
+.how-use__title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Kudryashev", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.how-use__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-use__description {
+  margin: 0;
+  font-size: 17px;
+  line-height: 25px;
+}

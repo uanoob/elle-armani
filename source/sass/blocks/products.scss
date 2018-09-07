@@ -1,0 +1,32 @@
+.products {
+  border: 1px solid orangered;
+  background-color: $bg-white;
+}
+
+.products__list {
+  border: 1px solid orangered;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  border: 1px solid orangered;
+}
+
+.products__title {
+  border: 1px solid orangered;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.products__image {
+  border: 1px solid orangered;
+}
+
+.products__description {
+  border: 1px solid orangered;
+  margin: 0;
+}

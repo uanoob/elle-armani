@@ -1,0 +1,31 @@
+.popup {
+  background-color: $bg-white;
+  text-align: center;
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 40px;
+  font-family: "Kudryashev", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.popup__description {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.popup__discount {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.popup__button-close {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $bg-black;
+  background-color: $bg-white;
+  border: 1px solid $bg-black;
+}
