@@ -1,14 +1,26 @@
 .model {
+  border: 1px solid orangered;
   color: $bg-white;
   background-color: $bg-darkred;
 }
 
 .model__image {
+  border: 1px solid orangered;
   margin: 0 40px;
 }
 
+.model__image img {
+  margin-top: -60px;
+}
+
+.model__text-wrap {
+  padding: 20px 20px 195px 40px;
+}
+
 .model__title {
+  border: 1px solid orangered;
   margin: 0;
+  margin-bottom: 15px;
   font-size: 50px;
   line-height: 40px;
   font-family: "Kudryashev", "Arial", sans-serif;
@@ -16,6 +28,7 @@
 }
 
 .model__description {
+  border: 1px solid orangered;
   margin: 0;
   font-size: 23px;
   line-height: 33px;
