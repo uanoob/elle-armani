@@ -3,6 +3,16 @@
   background-color: $bg-black;
 }
 
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__link {
+  outline: none;
+}
+
 .header__special {
   font-size: 15px;
   line-height: 20px;

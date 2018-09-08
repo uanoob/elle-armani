@@ -1,18 +1,57 @@
 .textures {
-  border: 1px solid orangered;
-  text-align: center;
-  font-family: "Kudryashev", "Arial", sans-serif;
+  // border: 1px solid orangered;
+  padding: 20px 20px 80px 20px;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
   font-weight: normal;
 }
 
 .textures__title {
   margin: 0;
+  padding-bottom: 20px;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 .textures__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.textures__item {
+  position: relative;
+}
+
+.textures__item::before {
+  position: absolute;
+  padding: 3px 17px 6px 17px;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 19px;
+  color: $bg-black;
+  background-color: $bg-white;
+}
+
+.textures__item--satin::before {
+  content: 'Satin';
+  top: -15px;
+  left: 95px;
+}
+
+.textures__item--vinyl::before {
+  content: 'Vinyl';
+  left: -35px;
+  bottom: -17px;
+  transform: rotate(-10deg);
+}
+
+.textures__item--lacquer::before {
+  content: 'Lacquer';
+  left: -35px;
+  bottom: -10px;
+  transform: rotate(10deg);
 }
