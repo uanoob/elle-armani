@@ -1,0 +1,44 @@
+.how-to {
+  position: relative;
+  padding: 90px 0 60px 0;
+  color: $bg-white;
+  background-color: $bg-black;
+}
+
+.how-to__gif {
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.how-to__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Kudryashev", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.how-to__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-to__item {
+  // border: 1px solid oldlace;
+  width: 200px;
+}
+
+.how-to__description {
+  // border: 1px solid oldlace;
+  margin: 0;
+  font-size: 17px;
+  line-height: 25px;
+}
