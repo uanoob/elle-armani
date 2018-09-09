@@ -1,6 +1,6 @@
 .how-to {
   position: relative;
-  padding: 90px 0 60px 0;
+  padding-bottom: 50px;
   color: $bg-white;
   background-color: $bg-black;
 }
@@ -12,9 +12,14 @@
   margin-left: -200px;
 }
 
+.how-to__gif--brunette {
+  top: -130px;
+}
+
 .how-to__title {
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 90px;
   font-size: 50px;
   line-height: 40px;
   text-align: center;
@@ -22,7 +27,12 @@
   font-weight: 600;
 }
 
+.how-to__title--brunette {
+  padding-top: 215px;
+}
+
 .how-to__list {
+  border: 1px solid oldlace;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -31,14 +41,27 @@
   justify-content: space-between;
 }
 
+.how-to__list--brunette {
+  padding: 0 60px 0 80px;
+}
+
 .how-to__item {
-  // border: 1px solid oldlace;
+  border: 1px solid oldlace;
   width: 200px;
+}
+
+.how-to__item--brunette {
+  width: 220px;
 }
 
 .how-to__description {
   // border: 1px solid oldlace;
   margin: 0;
+  margin-top: 15px;
   font-size: 17px;
   line-height: 25px;
+}
+
+.how-to__description--brunette {
+  margin-top: 25px;
 }
