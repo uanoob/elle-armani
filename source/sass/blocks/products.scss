@@ -1,29 +1,60 @@
 .products {
   border: 1px solid orangered;
+  position: relative;
+  padding-bottom: 120px;
   background-color: $bg-white;
+}
+
+.products--brunette {
+  padding-bottom: 150px;
+}
+
+.products--red {
+  padding: 35px;
 }
 
 .products__list {
   border: 1px solid orangered;
+  display: flex;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.products__list--brunette {
+  padding: 0 90px;
+}
+
 .products__item {
   border: 1px solid orangered;
+  width: 210px;
+  text-align: center;
+}
+
+.products__image img {
+  border: 1px solid orangered;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+.products__image--smooth-pencil img {
+  margin-top: -85px;
+  height: 245px;
+}
+
+.products__image--ecstasy-lacquer img {
+  height: 226px;
 }
 
 .products__title {
   border: 1px solid orangered;
-  margin: 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-}
-
-.products__image {
-  border: 1px solid orangered;
 }
 
 .products__description {
