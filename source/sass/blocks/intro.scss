@@ -5,6 +5,16 @@
   background-color: $bg-red;
 }
 
+.intro--white {
+  color: $bg-black;
+  background-color: $bg-white;
+}
+
+.intro--black {
+  color: $bg-white;
+  background-color: $bg-black;
+}
+
 .intro__title {
   // border: 1px solid oldlace;
   margin: 0;
@@ -26,6 +36,10 @@
   letter-spacing: -15px;
 }
 
+.intro__subtitle--white {
+  color: $bg-red;
+}
+
 .intro__subtitle span {
   // border: 1px solid oldlace;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -43,7 +57,7 @@
 
 .intro__subtitle::before {
   // border: 1px solid oldlace;
-  content: "Оттенок";
+  content: 'Оттенок';
   position: absolute;
   top: 170px;
   left: 50%;
@@ -56,4 +70,8 @@
   text-transform: uppercase;
   color: $bg-black;
   transform: rotate(-90deg);
+}
+
+.intro__subtitle--black::before {
+  color: $bg-white;
 }
