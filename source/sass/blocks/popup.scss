@@ -1,10 +1,13 @@
 .popup {
+  display: none;
+  padding: 150px 60px 280px 60px;
   background-color: $bg-white;
   text-align: center;
 }
 
 .popup__title {
   margin: 0;
+  margin-bottom: 40px;
   font-size: 60px;
   line-height: 40px;
   font-family: "Kudryashev", "Arial", sans-serif;
@@ -12,11 +15,15 @@
 }
 
 .popup__description {
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 18px;
   line-height: 22px;
 }
 
 .popup__discount {
+  display: none;
+  margin: 0;
   font-size: 22px;
   line-height: 28px;
 }
