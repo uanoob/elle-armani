@@ -1,7 +1,7 @@
 .intro {
   margin: 0 40px;
   padding: 50px 0 60px 0;
-  text-align: center;
+  box-sizing: border-box;
   background-color: $bg-red;
 }
 
@@ -23,28 +23,36 @@
   font-weight: normal;
   font-size: 70px;
   line-height: 40px;
+  text-align: center;
 }
 
 .intro__subtitle {
   // border: 1px solid oldlace;
-  position: relative;
-  margin: 0 -20px 70px -40px;
+  margin: 0;
+  margin: 0 -40px 0 -40px;
+  margin-bottom: 70px;
   font-family: 'Kudryashev Display', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 305px;
   line-height: 230px;
-  letter-spacing: -15px;
 }
 
 .intro__subtitle--white {
   color: $bg-red;
 }
 
-.intro__subtitle span {
+.intro__subtitle-hash {
   // border: 1px solid oldlace;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+
+.intro__subtitle-400 {
+  // border: 1px solid oldlace;
+  position: relative;
+  margin-left: -80px;
+  letter-spacing: -15px;
 }
 
 .intro__description {
@@ -55,13 +63,13 @@
   line-height: 33px;
 }
 
-.intro__subtitle::before {
+.intro__subtitle-400::before {
   // border: 1px solid oldlace;
   content: 'Оттенок';
   position: absolute;
-  top: 170px;
+  top: 220px;
   left: 50%;
-  margin-left: 20px;
+  margin-left: -70px;
   font-family: 'Kudryashev', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 30px;
@@ -74,4 +82,51 @@
 
 .intro__subtitle--black::before {
   color: $bg-white;
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 60px 0 60px;
+    width: 620px;
+    height: 620px;
+  }
+
+  .intro__title {
+    margin-bottom: 40px;
+    font-size: 90px;
+    line-height: 40px;
+  }
+
+  .intro__subtitle {
+    margin: 0 -300px;
+    font-size: 519px;
+    line-height: 230px;
+    order: 1;
+  }
+
+  .intro__subtitle-hash {
+    margin-left: 20px;
+  }
+
+  .intro__subtitle-400 {
+    margin-left: -150px;
+    letter-spacing: -25px;
+  }
+
+  .intro__subtitle-400::before {
+    top: 360px;
+    margin-left: -130px;
+    font-size: 54px;
+  }
+
+  .intro__description {
+    margin-bottom: 80px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
