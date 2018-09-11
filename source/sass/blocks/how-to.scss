@@ -16,6 +16,49 @@
   top: -130px;
 }
 
+.how-to__gif::before {
+  position: absolute;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
+  color: $bg-black;
+  background-color: $bg-white;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.how-to__gif--blonde::before {
+  content: '#400';
+  top: 180px;
+  left: -60px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  color: $bg-white;
+  background-color: $bg-red;
+  transform: rotate(-15deg);
+}
+
+.how-to__gif--brunette::before {
+  content: '#400';
+  top: 30px;
+  left: -90px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  transform: rotate(15deg);
+}
+
+.how-to__gif--red::before {
+  content: '#400';
+  top: -35px;
+  right: -20px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  color: $bg-white;
+  background-color: $bg-black;
+  transform: rotate(-15deg);
+}
+
 .how-to__title {
   margin: 0;
   margin-bottom: 25px;
@@ -23,7 +66,7 @@
   font-size: 50px;
   line-height: 40px;
   text-align: center;
-  font-family: "Kudryashev", "Arial", sans-serif;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
   font-weight: 600;
 }
 
@@ -47,11 +90,77 @@
 
 .how-to__item {
   border: 1px solid oldlace;
+  position: relative;
   width: 200px;
 }
 
 .how-to__item--brunette {
   width: 220px;
+}
+
+.how-to__item::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: $bg-black;
+  background-color: $bg-white;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.how-to__item--1::before {
+  content: '1';
+}
+
+.how-to__item--2::before {
+  content: '2';
+}
+
+.how-to__item--3::before {
+  content: '3';
+}
+
+.how-to__item--blonde-satin::after {
+  content: 'Satin';
+  top: 140px;
+  left: -10px;
+  position: absolute;
+  padding: 3px 8px 6px 8px;
+  font-size: 27px;
+  font-weight: 600;
+  color: $bg-black;
+  background-color: $bg-white;
+}
+
+.how-to__item--brunette-lacquer::after {
+  content: 'Lacquer';
+  top: 140px;
+  right: -40px;
+  position: absolute;
+  padding: 3px 8px 6px 8px;
+  font-size: 27px;
+  font-weight: 600;
+  color: $bg-black;
+  background-color: $bg-white;
+}
+
+.how-to__item--red-vinil::after {
+  content: 'Vinil';
+  top: 160px;
+  left: 10px;
+  position: absolute;
+  padding: 3px 8px 6px 8px;
+  font-size: 27px;
+  font-weight: 600;
+  color: $bg-black;
+  background-color: $bg-white;
 }
 
 .how-to__description {
@@ -64,4 +173,54 @@
 
 .how-to__description--brunette {
   margin-top: 25px;
+}
+
+@media (min-width: $desktop-width) {
+  .how-to__wrap {
+    margin: 0 auto;
+    width: 780px;
+  }
+
+  .how-to__gif {
+    top: -170px;
+    left: 50%;
+    margin-left: 170px;
+  }
+
+  .how-to__title {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .how-to__item {
+    width: 220px;
+  }
+
+  .how-to__item::before {
+    top: 0;
+    left: -40px;
+  }
+
+  .how-to__item--blonde-satin::after {
+    top: 80px;
+    left: auto;
+    right: -60px;
+  }
+
+  .how-to__item--brunette-lacquer::after {
+    top: 130px;
+    left: auto;
+    right: -75px;
+  }
+
+  .how-to__item--red-vinil::after {
+    top: 140px;
+    left: auto;
+    right: -45px;
+  }
+
+  .how-to__description {
+    font-size: 18px;
+  }
 }
