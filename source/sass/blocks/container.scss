@@ -1,0 +1,12 @@
+.container {
+  border: 1px solid orangered;
+  margin: 0 auto;
+  max-width: $mobile-width;
+  background-color: $bg-white;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: $max-desktop-width;
+  }
+}

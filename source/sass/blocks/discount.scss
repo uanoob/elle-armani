@@ -1,0 +1,163 @@
+.discount {
+  padding: 30px 40px 50px 40px;
+  color: $bg-white;
+  background-color: $bg-black;
+  text-align: center;
+}
+
+.discount__title,
+.discount__value {
+  border: 1px solid orangered;
+  font-family: "Kudryashev", "Arial", sans-serif;
+}
+
+.discount__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.discount__value {
+  display: none;
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.discount__question,
+.discount__description {
+  border: 1px solid orangered;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.discount__description {
+  display: none;
+}
+
+.discount__question {
+  margin-bottom: 20px;
+}
+
+.form__list {
+  border: 1px solid orangered;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__item {
+  border: 1px solid orangered;
+  margin-bottom: 20px;
+}
+
+.discount__form-input {
+  border: 1px solid orangered;
+  padding: 20px 0;
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.discount__form-textarea {
+  border: 1px solid orangered;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  padding-left: 20px;
+  width: 100%;
+  min-height: 140px;
+  box-sizing: border-box;
+}
+
+.discount__form ::placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  color: $bg-grey;
+}
+
+.discount__form label {
+  position: relative;
+}
+
+.discount__form-checkbox-label {
+  font-size: 16px;
+  line-height: 22px;
+  color: $bg-grey;
+}
+
+.discount__form-checkbox-label::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  background-color: $bg-white;
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.discount__form input[type='checkbox']:checked + .discount__form-checkbox-label::before {
+  background-image: url('/img/check.png');
+}
+
+.discount__form-button {
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 20px 55px;
+  font-size: 22px;
+  line-height: 22px;
+  color: $bg-white;
+  text-transform: uppercase;
+  background-color: $bg-black;
+  border: 1px solid $bg-white;
+}
+
+@media (min-width: $desktop-width) {
+  .discount__wrap {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .discount__title,
+  .discount__question {
+    display: none;
+  }
+
+  .discount__value {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .discount__description {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .form__item--name,
+  .form__item--textarea {
+    display: none;
+  }
+
+  .discount__form-checkbox-label {
+    // border: 1px solid oldlace;
+    display: inline-block;
+    padding-left: 35px;
+    text-align: left;
+  }
+
+  .discount__form-checkbox-label::before {
+    left: 0;
+  }
+
+  .discount__form-button {
+    width: 180px;
+    padding: 20px 0;
+  }
+}

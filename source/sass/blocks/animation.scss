@@ -1,0 +1,12 @@
+.animation {
+  display: none;
+  font-size: 18px;
+  color: $bg-white;
+  background-color: $bg-red;
+}
+
+@media (min-width: $desktop-width) {
+  .animation {
+    display: block;
+  }
+}

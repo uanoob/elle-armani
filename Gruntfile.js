@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "source",
-            src: ["fonts/**/*.{woff,woff2}", "css/**", "img/*.{svg, jpg, png}"],
+            src: ["fonts/**/*.{woff,woff2}", "css/**", "img/*.svg"],
             dest: "dist/",
           },
         ],
@@ -69,6 +69,22 @@ module.exports = function(grunt) {
         files: {
           "dist/js/app.min.js": ["dist/js/app.js"],
         },
+      },
+    },
+    imagemin: {
+      image: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true,
+        },
+        files: [
+          {
+            expand: true,
+            cwd: "source/img/",
+            src: ["**/*.{png,jpg,gif}"],
+            dest: "dist/img/",
+          },
+        ],
       },
     },
     posthtml: {
@@ -143,6 +159,7 @@ module.exports = function(grunt) {
     "csso",
     "babel",
     "uglify",
+    "imagemin",
     "posthtml",
   ]);
 };

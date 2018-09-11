@@ -1,0 +1,133 @@
+.all-products {
+  border: 1px solid orangered;
+  padding: 60px 20px;
+  background-color: $bg-white;
+}
+
+.all-products__main-title {
+  border: 1px solid orangered;
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+.all-products__main-title-hash {
+  margin-left: -10px;
+  vertical-align: middle;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 200px;
+  line-height: 150px;
+  color: $bg-red;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.all-products__main-title-400 {
+  margin-left: -20px;
+  vertical-align: middle;
+  font-size: 200px;
+  line-height: 150px;
+  color: $bg-red;
+}
+
+.all-products__main-title-text {
+  margin-left: -210px;
+  vertical-align: middle;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.all-products__list {
+  border: 1px solid orangered;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0 60px 0 80px;
+  list-style: none;
+}
+
+.all-products__list::before,
+.all-products__list::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 21px;
+  height: 40px;
+  background-color: $bg-white;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.all-products__list::before {
+  left: 0;
+  background-image: url('/img/left-copy.png');
+}
+
+.all-products__list::after {
+  right: 0;
+  background-image: url('/img/right-copy.png');
+}
+
+.all-products__list:hover::before,
+.all-products__list:hover::after {
+  cursor: pointer;
+}
+
+.all-products__item {
+  border: 1px solid orangered;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 240px;
+  min-height: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.all-products__title {
+  border: 1px solid orangered;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.all-products__description {
+  border: 1px solid orangered;
+}
+
+@media (min-width: $desktop-width) {
+  .all-products {
+    margin-bottom: 90px;
+    padding: 0;
+  }
+
+  .all-products__main-title {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 940px;
+  }
+
+  .all-products__main-title-hash,
+  .all-products__main-title-400 {
+    font-size: 300px;
+    line-height: 230px;
+  }
+
+  .all-products__main-title-text {
+    margin-left: -260px;
+    font-size: 80px;
+    line-height: 40px;
+  }
+
+  .all-products__list::before,
+  .all-products__list::after {
+    display: none;
+  }
+}

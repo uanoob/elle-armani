@@ -1,0 +1,40 @@
+.header {
+  color: $bg-white;
+  background-color: $bg-black;
+}
+
+.header__navbar {
+  border: 1px solid oldlace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__link {
+  border: 1px solid oldlace;
+  outline: none;
+}
+
+.header__special {
+  border: 1px solid oldlace;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .header__navbar {
+    padding: 15px 80px;
+  }
+
+  .header__link--elle {
+    width: 250px;
+  }
+
+  .header__special {
+    width: 250px;
+    font-size: 16px;
+  }
+}
