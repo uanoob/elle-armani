@@ -71,4 +71,22 @@
     margin: 0 auto;
     width: 660px;
   }
+
+  .products--brunette {
+    padding: 0;
+    min-height: 230px;
+  }
+
+  .products__wrap--brunette {
+    margin-left: 1130px;
+    width: 380px;
+  }
+
+  .products__list--brunette {
+    padding: 0;
+  }
+
+  .products__image--brunette img {
+    margin-top: -170px;
+  }
 }
