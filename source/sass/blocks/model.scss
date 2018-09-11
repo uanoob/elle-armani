@@ -43,3 +43,31 @@
   font-size: 23px;
   line-height: 33px;
 }
+
+@media (min-width: $desktop-width) {
+  .model {
+    display: flex;
+    justify-content: center;
+  }
+
+  .model__image {
+    margin: 0;
+    margin-right: 100px;
+    width: 660px;
+  }
+
+  .model__image img {
+    margin-top: -120px;
+  }
+
+  .model__text-wrap {
+    margin-top: 90px;
+    padding: 0;
+    width: 465px;
+  }
+
+  .model__description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
