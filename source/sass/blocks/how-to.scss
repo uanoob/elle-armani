@@ -181,16 +181,38 @@
     width: 780px;
   }
 
+  .how-to__wrap--brunette {
+    margin-left: 570px;
+    width: 500px;
+  }
+
   .how-to__gif {
+    left: 1130px;
+    margin: 0;
+  }
+
+  .how-to__gif--blonde {
     top: -170px;
-    left: 50%;
-    margin-left: 170px;
+  }
+
+  .how-to__gif--red {
+    top: -170px;
+  }
+
+  .how-to__gif--brunette::before {
+    top: 140px;
+    left: 375px;
+    transform: rotate(15deg);
   }
 
   .how-to__title {
     margin-bottom: 40px;
     padding-top: 20px;
     text-align: left;
+  }
+
+  .how-to__list--brunette {
+    padding: 0;
   }
 
   .how-to__item {

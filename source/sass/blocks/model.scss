@@ -47,12 +47,12 @@
 @media (min-width: $desktop-width) {
   .model {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
 
   .model__image {
     margin: 0;
-    margin-right: 100px;
+    margin-left: 370px;
     width: 660px;
   }
 
@@ -63,7 +63,8 @@
   .model__text-wrap {
     margin-top: 90px;
     padding: 0;
-    width: 465px;
+    padding-left: 100px;
+    width: 450px;
   }
 
   .model__description {
