@@ -61,3 +61,14 @@
   border: 1px solid orangered;
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .products {
+    padding-bottom: 150px;
+  }
+  
+  .products__wrap {
+    margin: 0 auto;
+    width: 660px;
+  }
+}
