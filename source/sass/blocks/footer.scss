@@ -81,10 +81,23 @@
 
 .footer__info {
   border: 1px solid orangered;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 440px;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrap {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 660px;
+  }
+
+  .footer__info {
+    margin-bottom: 80px;
+  }
 }
