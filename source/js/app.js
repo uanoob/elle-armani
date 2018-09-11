@@ -7,7 +7,7 @@ function changeColors() {
 }
 
 function timer() {
-  setInterval(changeColors, 4000);
+  setInterval(changeColors, 5000);
 }
 
 document.addEventListener('DOMContentLoaded', timer());

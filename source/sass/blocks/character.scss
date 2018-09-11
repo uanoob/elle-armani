@@ -106,3 +106,76 @@
   top: 116px;
   right: -20px;
 }
+
+@media (min-width: $desktop-width) {
+  .character {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 200px;
+    width: 780px;
+  }
+
+  .character::before,
+  .character::after {
+    content: '';
+    position: absolute;
+    // background-color: orange;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .character::before {
+    top: 95px;
+    left: -570px;
+    width: 405px;
+    height: 701px;
+    background-image: url('/img/red-lips-left.png');
+  }
+
+  .character::after {
+    top: -110px;
+    right: -570px;
+    width: 355px;
+    height: 551px;
+    background-image: url('/img/red-lips-right.png');
+  }
+
+  .character__title {
+    margin: 60px 0 35px 0;
+    font-size: 80px;
+    line-height: 40px;
+  }
+
+  .character__title::before {
+    margin-left: -375px;
+  }
+
+  .character__item {
+    width: 220px;
+  }
+
+  .character__item--red::before {
+    top: 97px;
+    left: -80px;
+  }
+
+  .character__item--blonde::before {
+    top: 280px;
+    right: -40px;
+  }
+  
+  .character__item--brunette::before {
+    top: 45px;
+    right: -100px;
+  }
+
+  .character__item-image {
+    padding: 0;
+    width: auto;
+  }
+
+  .character__item-desription {
+    font-size: 22px;
+  }
+}
