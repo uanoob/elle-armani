@@ -84,13 +84,22 @@
 
 .all-products__item {
   border: 1px solid orangered;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   width: 240px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+.all-products__image {
+  border: 1px solid orangered;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 331px;
+}
+
+.all-products__image img {
+  border: 1px solid orangered;
 }
 
 .all-products__title {
@@ -103,6 +112,16 @@
 
 .all-products__description {
   border: 1px solid orangered;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 @media (min-width: $desktop-width) {
