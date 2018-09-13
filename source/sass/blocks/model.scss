@@ -24,7 +24,8 @@
 }
 
 .model__text-wrap {
-  padding: 20px 20px 195px 40px;
+  position: relative;
+  padding: 20px 20px 0 40px;
 }
 
 .model__title {
@@ -33,42 +34,111 @@
   margin-bottom: 15px;
   font-size: 50px;
   line-height: 40px;
-  font-family: "Kudryashev", "Arial", sans-serif;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
   font-weight: 600;
 }
 
 .model__description {
   border: 1px solid orangered;
   margin: 0;
+  margin-bottom: -30px;
   font-size: 23px;
   line-height: 33px;
 }
 
+.model__description--brunette {
+  margin-bottom: -160px;
+}
+
+.model__gif {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  transform: translateY(70px);
+}
+
+.model__gif--brunette {
+  transform: translateY(200px);
+}
+
+.model__gif::before {
+  position: absolute;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
+  color: $bg-black;
+  background-color: $bg-white;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.model__gif--blonde::before {
+  content: '#400';
+  top: 180px;
+  left: -60px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  color: $bg-white;
+  background-color: $bg-red;
+  transform: rotate(-15deg);
+}
+
+.model__gif--brunette::before {
+  content: '#400';
+  top: 30px;
+  left: -90px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  transform: rotate(15deg);
+}
+
+.model__gif--red::before {
+  content: '#400';
+  top: -35px;
+  right: -20px;
+  padding: 5px 10px;
+  font-size: 41px;
+  font-weight: 600;
+  color: $bg-white;
+  background-color: $bg-black;
+  transform: rotate(-15deg);
+}
+
 @media (min-width: $desktop-width) {
-  .model {
+  .model__wrap {
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
 
   .model__image {
     margin: 0;
-    margin-left: 370px;
     width: 660px;
   }
 
-  .model__image img {
-    margin-top: -120px;
-  }
-
   .model__text-wrap {
-    margin-top: 90px;
+    margin: 0;
     padding: 0;
     padding-left: 100px;
-    width: 450px;
+    padding-right: 80px;
+    width: 660px;
+  }
+
+  .model__title {
+    padding-top: 90px;
   }
 
   .model__description {
     font-size: 20px;
     line-height: 32px;
+  }
+
+  .model__gif {
+    margin: 0;
+  }
+
+  .model__gif--brunette::before {
+    top: 140px;
+    left: 375px;
+    transform: rotate(15deg);
   }
 }
