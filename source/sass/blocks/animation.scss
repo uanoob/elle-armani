@@ -1,8 +1,20 @@
 .animation {
   display: none;
-  font-size: 18px;
-  color: $bg-white;
+  height: 27px;
   background-color: $bg-red;
+  background-image: url('/img/strip-line.png');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: 100s linear infinite strip;
+}
+
+@keyframes strip {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
