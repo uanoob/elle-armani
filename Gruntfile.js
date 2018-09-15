@@ -146,9 +146,16 @@ module.exports = function(grunt) {
       },
       all: ['source/sass/**/*.scss'],
     },
+    'gh-pages': {
+      options: {
+        base: 'dist',
+      },
+      src: ['**'],
+    },
   });
 
   grunt.registerTask('sasslint', ['stylelint']);
+  grunt.registerTask('deploy', ['gh-pages']);
   grunt.registerTask('serve', ['browserSync', 'watch']);
   grunt.registerTask('build', [
     'clean',
