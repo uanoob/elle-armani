@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
   max-width: 640px;
   background-color: #ffffff; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .container {
     max-width: 1920px; } }
 
@@ -88,7 +88,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .header__navbar {
     padding: 15px 80px; }
   .header__link--elle {
@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden {
 .intro__subtitle--black::before {
   color: #ffffff; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .intro {
     display: flex;
     flex-direction: column;
@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden {
   bottom: -10px;
   transform: rotate(10deg); }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .textures {
     margin: 0 auto;
     padding: 20px 0 30px 0;
@@ -346,13 +346,18 @@ input[type="radio"].visually-hidden {
   top: 116px;
   right: -20px; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .character {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 200px;
+    padding-bottom: 200px; }
+  .character__wrap {
+    margin: 0 auto;
     width: 780px; }
+  .character__description {
+    position: relative;
+    z-index: 2; }
   .character::before,
   .character::after {
     content: '';
@@ -361,13 +366,13 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat; }
   .character::before {
     top: 95px;
-    left: -570px;
+    left: 0;
     width: 405px;
     height: 701px;
     background-image: url("../img/red-lips-left.png"); }
   .character::after {
     top: -110px;
-    right: -570px;
+    right: 0;
     width: 355px;
     height: 551px;
     background-image: url("../img/red-lips-right.png"); }
@@ -378,7 +383,8 @@ input[type="radio"].visually-hidden {
   .character__title::before {
     margin-left: -375px; }
   .character__item {
-    width: 220px; }
+    width: 220px;
+    z-index: 2; }
   .character__item--red::before {
     top: 97px;
     left: -80px; }
@@ -481,7 +487,7 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   transform: rotate(-15deg); }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .model__wrap {
     display: flex;
     justify-content: center; }
@@ -521,7 +527,7 @@ input[type="radio"].visually-hidden {
   100% {
     background-position: -10000px 0; } }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .animation {
     display: block; } }
 
@@ -627,7 +633,7 @@ input[type="radio"].visually-hidden {
 .how-to__description--brunette {
   margin-top: 25px; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .how-to__wrap {
     margin: 0 auto;
     width: 780px; }
@@ -670,7 +676,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 150px; }
 
 .products--red {
-  padding: 35px; }
+  padding-bottom: 35px; }
 
 .products__list {
   display: flex;
@@ -707,7 +713,7 @@ input[type="radio"].visually-hidden {
 .products__description {
   margin: 0; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .products {
     padding-bottom: 150px; }
   .products__wrap {
@@ -720,8 +726,8 @@ input[type="radio"].visually-hidden {
     padding: 0;
     min-height: 320px; }
   .products__wrap--brunette {
-    margin-left: 1130px;
-    width: 380px; }
+    width: 380px;
+    transform: translateX(220px); }
   .products__list--brunette {
     padding: 0; }
   .products__image--brunette img {
@@ -822,7 +828,7 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   border: 1px solid #ffffff; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .discount__wrap {
     margin: 0 auto;
     width: 500px; }
@@ -946,7 +952,7 @@ input[type="radio"].visually-hidden {
   to {
     opacity: 1; } }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .all-products {
     margin-bottom: 90px;
     padding: 0; }
@@ -1041,7 +1047,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .footer__wrap {
     margin: 0 auto;
     margin-bottom: 40px;
@@ -1095,7 +1101,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #000000; }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .popup {
     width: 940px;
     margin-top: -240px;
