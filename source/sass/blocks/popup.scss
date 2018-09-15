@@ -53,9 +53,9 @@
 
 @media (min-width: $desktop-width) {
   .popup {
-    margin: 0 auto;
-    padding: 0;
     width: 940px;
+    margin-top: -240px;
+    margin-left: -470px;
   }
 
   .popup__title {
