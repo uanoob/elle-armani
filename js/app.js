@@ -52,4 +52,29 @@ function showSlides(n) {
 }
 
 showSlides(slideIndex);
+
+// popup
+var submitBtn = document.querySelector('.discount__form-button');
+var overlay = document.querySelector('.overlay');
+var popup = document.querySelector('.popup');
+var popupBtnClose = document.querySelector('.popup__button-close');
+
+submitBtn.addEventListener('click', function () {
+  showPopup(event);
+});
+popupBtnClose.addEventListener('click', function () {
+  closePopup(event);
+});
+
+function showPopup(event) {
+  event.preventDefault();
+  overlay.classList.add('overlay-show');
+  popup.classList.add('popup-show');
+}
+
+function closePopup(event) {
+  event.preventDefault();
+  overlay.classList.remove('overlay-show');
+  popup.classList.remove('popup-show');
+}
 //# sourceMappingURL=app.js.map
