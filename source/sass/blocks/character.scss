@@ -91,12 +91,14 @@
   content: 'Рыжая';
   top: 125px;
   left: -20px;
+  z-index: 2;
 }
 
 .character__item--blonde::before {
   content: 'Блондинка';
   top: 195px;
   right: 0;
+  z-index: 2;
   background-color: $bg-red;
 }
 
@@ -104,6 +106,17 @@
   content: 'Брюнетка';
   top: 116px;
   right: -20px;
+  z-index: 2;
+}
+
+.character__link {
+  text-decoration: none;
+  color: $bg-black;
+}
+
+.character__link:hover .character__item-image {
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: $desktop-width) {
