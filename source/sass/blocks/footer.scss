@@ -1,5 +1,5 @@
 .footer {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   padding: 0 20px;
   background-color: $bg-white;
 }
@@ -11,7 +11,7 @@
 }
 
 .footer__share {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   position: relative;
   margin-right: 135px;
   font-size: 16px;
@@ -31,7 +31,7 @@
 }
 
 .footer__social-list {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   display: flex;
   justify-content: space-between;
   width: 340px;
@@ -41,7 +41,7 @@
 }
 
 .footer__social-item {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   position: relative;
   font-size: 14px;
   line-height: 23px;
@@ -60,17 +60,17 @@
 }
 
 .footer__social-item--fb::before {
-  background-image: url('/img/fb.png');
+  background-image: url('../img/fb.png');
   background-position: 4px 1px;
 }
 
 .footer__social-item--vk::before {
-  background-image: url('/img/vk.png');
+  background-image: url('../img/vk.png');
   background-position: 0 3px;
 }
 
 .footer__social-item--tw::before {
-  background-image: url('/img/twitter.png');
+  background-image: url('../img/twitter.png');
   background-position: 1px 2px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .footer__info {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   margin: 0 auto;
   margin-bottom: 40px;
   width: 440px;
