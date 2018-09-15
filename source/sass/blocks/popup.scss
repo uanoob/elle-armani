@@ -1,9 +1,21 @@
 .popup {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   display: none;
-  padding: 150px 60px 280px 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -165px;
+  margin-left: -280px;
+  padding: 40px 20px;
+  z-index: 7;
+  width: 560px;
+  box-sizing: border-box;
   background-color: $bg-white;
   text-align: center;
+}
+
+.popup-show {
+  display: block;
 }
 
 .popup__title {
@@ -11,7 +23,7 @@
   margin-bottom: 40px;
   font-size: 60px;
   line-height: 40px;
-  font-family: "Kudryashev", "Arial", sans-serif;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
   font-weight: normal;
 }
 

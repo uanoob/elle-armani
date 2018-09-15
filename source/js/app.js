@@ -13,6 +13,7 @@ function timer() {
 document.addEventListener('DOMContentLoaded', timer());
 
 // Slider
+const container = document.querySelector('.container');
 const prevBtn = document.querySelector('.btn__slider--prev');
 const nextBtn = document.querySelector('.btn__slider--next');
 const slides = document.querySelectorAll('.slide-item');
@@ -32,7 +33,7 @@ function moveLeft() {
 function moveRight() {
   showSlides((slideIndex += 1));
 }
-
+// console.log(container.clientWidth );
 function showSlides(n) {
   let i;
   if (n > slides.length) {
@@ -49,3 +50,28 @@ function showSlides(n) {
 }
 
 showSlides(slideIndex);
+
+// popup
+const submitBtn = document.querySelector('.discount__form-button');
+const overlay = document.querySelector('.overlay');
+const popup = document.querySelector('.popup');
+const popupBtnClose = document.querySelector('.popup__button-close');
+
+submitBtn.addEventListener('click', function() {
+  showPopup(event);
+});
+popupBtnClose.addEventListener('click', function() {
+  closePopup(event);
+});
+
+function showPopup(event) {
+  event.preventDefault();
+  overlay.classList.add('overlay-show');
+  popup.classList.add('popup-show');
+}
+
+function closePopup(event) {
+  event.preventDefault();
+  overlay.classList.remove('overlay-show');
+  popup.classList.remove('popup-show');
+}
