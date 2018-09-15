@@ -619,7 +619,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff; }
 
 .how-to__description {
-  border: 1px solid oldlace;
   margin: 0;
   margin-top: 15px;
   font-size: 17px;
@@ -1098,9 +1097,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 960px) {
   .popup {
-    margin: 0 auto;
-    padding: 0;
-    width: 940px; }
+    width: 940px;
+    margin-top: -240px;
+    margin-left: -470px; }
   .popup__title {
     margin-top: 100px; }
   .popup__description {
