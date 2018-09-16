@@ -20,7 +20,7 @@
   margin-left: -295px;
   width: 60px;
   height: 35px;
-  background-image: url("/img/red-lips.png");
+  background-image: url('../img/red-lips.png');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -76,7 +76,6 @@
   text-align: center;
 }
 
-
 .character__item::before {
   position: absolute;
   padding: 3px 17px 5px 17px;
@@ -92,12 +91,14 @@
   content: 'Рыжая';
   top: 125px;
   left: -20px;
+  z-index: 2;
 }
 
 .character__item--blonde::before {
   content: 'Блондинка';
   top: 195px;
   right: 0;
+  z-index: 2;
   background-color: $bg-red;
 }
 
@@ -105,6 +106,17 @@
   content: 'Брюнетка';
   top: 116px;
   right: -20px;
+  z-index: 2;
+}
+
+.character__link {
+  text-decoration: none;
+  color: $bg-black;
+}
+
+.character__link:hover .character__item-image {
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: $desktop-width) {
@@ -113,32 +125,40 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 200px;
+  }
+
+  .character__wrap {
+    margin: 0 auto;
     width: 780px;
+  }
+
+  .character__description {
+    position: relative;
+    z-index: 2;
   }
 
   .character::before,
   .character::after {
     content: '';
     position: absolute;
-    // background-color: orange;
     background-position: 0 0;
     background-repeat: no-repeat;
   }
 
   .character::before {
     top: 95px;
-    left: -570px;
+    left: 0;
     width: 405px;
     height: 701px;
-    background-image: url('/img/red-lips-left.png');
+    background-image: url('../img/red-lips-left.png');
   }
 
   .character::after {
     top: -110px;
-    right: -570px;
+    right: 0;
     width: 355px;
     height: 551px;
-    background-image: url('/img/red-lips-right.png');
+    background-image: url('../img/red-lips-right.png');
   }
 
   .character__title {
@@ -153,6 +173,7 @@
 
   .character__item {
     width: 220px;
+    z-index: 2;
   }
 
   .character__item--red::before {
@@ -164,7 +185,7 @@
     top: 280px;
     right: -40px;
   }
-  
+
   .character__item--brunette::before {
     top: 45px;
     right: -100px;

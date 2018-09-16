@@ -1,62 +1,7 @@
 .how-to {
-  position: relative;
   padding-bottom: 50px;
   color: $bg-white;
   background-color: $bg-black;
-}
-
-.how-to__gif {
-  position: absolute;
-  top: -160px;
-  left: 50%;
-  margin-left: -200px;
-}
-
-.how-to__gif--brunette {
-  top: -130px;
-}
-
-.how-to__gif::before {
-  position: absolute;
-  font-family: 'Kudryashev', 'Arial', sans-serif;
-  color: $bg-black;
-  background-color: $bg-white;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.how-to__gif--blonde::before {
-  content: '#400';
-  top: 180px;
-  left: -60px;
-  padding: 5px 10px;
-  font-size: 41px;
-  font-weight: 600;
-  color: $bg-white;
-  background-color: $bg-red;
-  transform: rotate(-15deg);
-}
-
-.how-to__gif--brunette::before {
-  content: '#400';
-  top: 30px;
-  left: -90px;
-  padding: 5px 10px;
-  font-size: 41px;
-  font-weight: 600;
-  transform: rotate(15deg);
-}
-
-.how-to__gif--red::before {
-  content: '#400';
-  top: -35px;
-  right: -20px;
-  padding: 5px 10px;
-  font-size: 41px;
-  font-weight: 600;
-  color: $bg-white;
-  background-color: $bg-black;
-  transform: rotate(-15deg);
 }
 
 .how-to__title {
@@ -75,7 +20,7 @@
 }
 
 .how-to__list {
-  border: 1px solid oldlace;
+  // border: 1px solid oldlace;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -89,7 +34,7 @@
 }
 
 .how-to__item {
-  border: 1px solid oldlace;
+  // border: 1px solid oldlace;
   position: relative;
   width: 200px;
 }
@@ -182,27 +127,9 @@
   }
 
   .how-to__wrap--brunette {
-    margin-left: 570px;
+    margin: 0 auto;
     width: 500px;
-  }
-
-  .how-to__gif {
-    left: 1130px;
-    margin: 0;
-  }
-
-  .how-to__gif--blonde {
-    top: -170px;
-  }
-
-  .how-to__gif--red {
-    top: -170px;
-  }
-
-  .how-to__gif--brunette::before {
-    top: 140px;
-    left: 375px;
-    transform: rotate(15deg);
+    transform: translateX(-140px);
   }
 
   .how-to__title {
