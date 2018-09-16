@@ -98,17 +98,19 @@ input[type="radio"].visually-hidden {
     font-size: 16px; } }
 
 .intro {
+  position: relative;
   margin: 0 40px;
   padding: 50px 0 60px 0;
   box-sizing: border-box;
   background-color: #c20d1e; }
 
-.intro--white {
-  color: #000000;
+.intro--1 {
+  background-color: #c20d1e; }
+
+.intro--2 {
   background-color: #ffffff; }
 
-.intro--black {
-  color: #ffffff;
+.intro--3 {
   background-color: #000000; }
 
 .intro__title {
@@ -120,6 +122,15 @@ input[type="radio"].visually-hidden {
   line-height: 40px;
   text-align: center; }
 
+.intro__title--1 {
+  color: #ffffff; }
+
+.intro__title--2 {
+  color: #000000; }
+
+.intro__title--3 {
+  color: #c20d1e; }
+
 .intro__subtitle {
   margin: 0;
   margin: 0 -40px 0 -40px;
@@ -129,7 +140,13 @@ input[type="radio"].visually-hidden {
   font-size: 305px;
   line-height: 230px; }
 
-.intro__subtitle--white {
+.intro__subtitle--1 {
+  color: #ffffff; }
+
+.intro__subtitle--2 {
+  color: #c20d1e; }
+
+.intro__subtitle--3 {
   color: #c20d1e; }
 
 .intro__subtitle-hash {
@@ -142,28 +159,44 @@ input[type="radio"].visually-hidden {
   margin-left: -80px;
   letter-spacing: -15px; }
 
+.intro__shade {
+  content: 'Оттенок';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 275px;
+  margin-left: 12px;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #000000;
+  text-transform: uppercase;
+  transform: rotate(-90deg); }
+
+.intro__shade--1 {
+  color: #000000; }
+
+.intro__shade--2 {
+  color: #000000; }
+
+.intro__shade--3 {
+  color: #ffffff; }
+
 .intro__description {
   margin: 0;
   padding: 0 60px;
   font-size: 23px;
   line-height: 33px; }
 
-.intro__subtitle-400::before {
-  content: 'Оттенок';
-  position: absolute;
-  top: 220px;
-  left: 50%;
-  margin-left: -70px;
-  font-family: 'Kudryashev', 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  color: #000000;
-  transform: rotate(-90deg); }
+.intro__description--1 {
+  color: #ffffff; }
 
-.intro__subtitle--black::before {
+.intro__description--2 {
+  color: #000000; }
+
+.intro__description--3 {
   color: #ffffff; }
 
 @media (min-width: 1140px) {
@@ -188,9 +221,9 @@ input[type="radio"].visually-hidden {
   .intro__subtitle-400 {
     margin-left: -150px;
     letter-spacing: -25px; }
-  .intro__subtitle-400::before {
-    top: 360px;
-    margin-left: -130px;
+  .intro__shade {
+    margin-bottom: 165px;
+    margin-left: 2px;
     font-size: 54px; }
   .intro__description {
     margin-bottom: 80px;
