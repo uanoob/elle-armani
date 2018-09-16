@@ -1,17 +1,20 @@
 .intro {
+  position: relative;
   margin: 0 40px;
   padding: 50px 0 60px 0;
   box-sizing: border-box;
   background-color: $bg-red;
 }
 
-.intro--white {
-  color: $bg-black;
+.intro--1 {
+  background-color: $bg-red;
+}
+
+.intro--2 {
   background-color: $bg-white;
 }
 
-.intro--black {
-  color: $bg-white;
+.intro--3 {
   background-color: $bg-black;
 }
 
@@ -26,6 +29,18 @@
   text-align: center;
 }
 
+.intro__title--1 {
+  color: $bg-white;
+}
+
+.intro__title--2 {
+  color: $bg-black;
+}
+
+.intro__title--3 {
+  color: $bg-red;
+}
+
 .intro__subtitle {
   // border: 1px solid oldlace;
   margin: 0;
@@ -37,7 +52,15 @@
   line-height: 230px;
 }
 
-.intro__subtitle--white {
+.intro__subtitle--1 {
+  color: $bg-white;
+}
+
+.intro__subtitle--2 {
+  color: $bg-red;
+}
+
+.intro__subtitle--3 {
   color: $bg-red;
 }
 
@@ -55,6 +78,36 @@
   letter-spacing: -15px;
 }
 
+.intro__shade {
+  // border: 1px solid oldlace;
+  content: 'Оттенок';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 275px;
+  margin-left: 12px;
+  font-family: 'Kudryashev', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: $bg-black;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.intro__shade--1 {
+  color: $bg-black;
+}
+
+.intro__shade--2 {
+  color: $bg-black;
+}
+
+.intro__shade--3 {
+  color: $bg-white;
+}
+
 .intro__description {
   // border: 1px solid oldlace;
   margin: 0;
@@ -63,24 +116,15 @@
   line-height: 33px;
 }
 
-.intro__subtitle-400::before {
-  // border: 1px solid oldlace;
-  content: 'Оттенок';
-  position: absolute;
-  top: 220px;
-  left: 50%;
-  margin-left: -70px;
-  font-family: 'Kudryashev', 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  color: $bg-black;
-  transform: rotate(-90deg);
+.intro__description--1 {
+  color: $bg-white;
 }
 
-.intro__subtitle--black::before {
+.intro__description--2 {
+  color: $bg-black;
+}
+
+.intro__description--3 {
   color: $bg-white;
 }
 
@@ -116,9 +160,9 @@
     letter-spacing: -25px;
   }
 
-  .intro__subtitle-400::before {
-    top: 360px;
-    margin-left: -130px;
+  .intro__shade {
+    margin-bottom: 165px;
+    margin-left: 2px;
     font-size: 54px;
   }
 
