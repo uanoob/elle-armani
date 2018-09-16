@@ -1,16 +1,40 @@
 const intro = document.querySelector('.intro');
+const title = document.querySelector('.intro__title');
 const subtitle = document.querySelector('.intro__subtitle');
+const shade = document.querySelector('.intro__shade');
+const description = document.querySelector('.intro__description');
 
-function changeColors() {
-  intro.classList.toggle('intro--white');
-  subtitle.classList.toggle('intro__subtitle--white');
+function addClass(n) {
+  intro.classList.add(`intro--${n}`);
+  title.classList.add(`intro__title--${n}`);
+  subtitle.classList.add(`intro__subtitle--${n}`);
+  shade.classList.add(`intro__shade--${n}`);
+  description.classList.add(`intro__description--${n}`);
 }
 
-function timer() {
-  setInterval(changeColors, 5000);
+function removeClass(n) {
+  intro.classList.remove(`intro--${n}`);
+  title.classList.remove(`intro__title--${n}`);
+  subtitle.classList.remove(`intro__subtitle--${n}`);
+  shade.classList.remove(`intro__shade--${n}`);
+  description.classList.remove(`intro__description--${n}`);
 }
 
-document.addEventListener('DOMContentLoaded', timer());
+let n = 1;
+
+function timer(n) {
+  addClass(n);
+  setTimeout(function() {
+    removeClass(n);
+    n = n + 1;
+    if (n > 3) {
+      n = 1;
+    }
+    timer(n);
+  }, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', timer(n));
 
 // Slider
 const container = document.querySelector('.container');
