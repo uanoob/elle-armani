@@ -1,3 +1,4 @@
+//Blink
 const intro = document.querySelector('.intro');
 const title = document.querySelector('.intro__title');
 const subtitle = document.querySelector('.intro__subtitle');
@@ -41,13 +42,16 @@ const container = document.querySelector('.container');
 const prevBtn = document.querySelector('.btn__slider--prev');
 const nextBtn = document.querySelector('.btn__slider--next');
 const slides = document.querySelectorAll('.slide-item');
-let slideIndex = 2;
 
 prevBtn.addEventListener('click', function() {
   moveLeft();
 });
 nextBtn.addEventListener('click', function() {
   moveRight();
+});
+
+window.addEventListener('resize', function() {
+  resizeHandler();
 });
 
 function moveLeft() {
@@ -57,7 +61,9 @@ function moveLeft() {
 function moveRight() {
   showSlides((slideIndex += 1));
 }
-// console.log(container.clientWidth );
+
+let slideIndex = 2;
+
 function showSlides(n) {
   let i;
   if (n > slides.length) {
@@ -73,7 +79,21 @@ function showSlides(n) {
   slides[slideIndex - 2].style.display = 'block';
 }
 
-showSlides(slideIndex);
+function showAll() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'block';
+  }
+}
+
+function resizeHandler() {
+  if (window.innerWidth < 1140) {
+    showSlides(slideIndex);
+  } else {
+    showAll();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', resizeHandler());
 
 // popup
 const submitBtn = document.querySelector('.discount__form-button');
